@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="cart">
+  <head>
+    <meta charset="utf-8">
+    <title>shopping_cart_angularJS_1.6</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="cart.js"></script>
+  </head>
+  <body>
+    <div ng-controller="ListController as listItems" class="content">
+      <div ng-repeat="item in listItems.list" class="list">
+        <div>{{item.name}}</div>
+      </div>
+    </div>
+  </body>
+</html>
